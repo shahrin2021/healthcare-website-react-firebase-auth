@@ -1,0 +1,25 @@
+
+
+.booking-btn{
+   
+}
+
+
+.working-scedule{
+    box-shadow: 3px 4px 10px 0;
+    padding: 30px 30px;
+    background-color: #ffff
+}
+
+
+.sceduleArea{
+  margin-top: -60px;
+  
+}
+
+@media(max-width:688px) {
+    .sceduleArea{
+        margin-top: 60px;
+        
+      }
+}
