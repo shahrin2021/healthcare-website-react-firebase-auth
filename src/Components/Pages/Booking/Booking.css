@@ -1,0 +1,37 @@
+.bookingArea{
+    background-image: url(../../../image/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.booking-title{
+color:rgb(70, 57, 219);
+}
+
+.booking-container{
+    background-image: url(../../../image/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-subTitle{
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #c60ddf;
+
+}
+
+.lable{
+    color: #fff;
+    font-size: 20px;
+}

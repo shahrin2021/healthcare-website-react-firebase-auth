@@ -13,7 +13,7 @@ const Banner = () => {
                <h1>Your Most Trusted Health Partner</h1>
                <p>We provide best leading medicle service to our patiant.</p>
            </div>
-           <button className='bannerBtn btn btn-danger'>Make an Appoinment <i class="uil uil-arrow-right banner-icon"></i></button>
+           <button className='bannerBtn btn btn-danger'>Make an Appoinment <i className="uil uil-arrow-right banner-icon"></i></button>
            </Container>
         </div>
     );

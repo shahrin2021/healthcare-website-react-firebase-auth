@@ -1,0 +1,27 @@
+.doctor-area{
+    background-image: url(../../../image/service1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.docTitle{
+    font-size: 40px;
+    color: #fff;
+}
+.docMenu{
+    text-decoration: none;
+    font-size:20px ;
+    color: #b420f3 !important;
+    font-weight: bold;
+}
+
+.docIcon{
+    margin: 0 10px;
+    font-size: 30px;
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "id":1, 
+        "img":"https://image.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
+        "name":" Dr Burak Demis",
+        "expart":"Dental Surgeon"
+    },
+    {
+        "id":2, 
+        "img":"https://image.freepik.com/free-photo/portrait-smiling-male-doctor_171337-1532.jpg",
+        "name":" Dr Bhabali o De",
+        "expart":"Neurosurgeon"
+    },
+    {
+        "id":3, 
+        "img":"https://image.freepik.com/free-photo/hospital-healthcare-workers-covid-19-treatment-concept-young-doctor-scrubs-making-daily-errands-clinic-listening-patient-symptoms-look-camera-professional-physician-curing-diseases_1258-57233.jpg",
+        "name":" Dr Debolian Demis",
+        "expart":"Neurosurgeon"
+    },
+    {
+        "id":4, 
+        "img":"https://image.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827775.jpg",
+        "name":" Dr Demis Usbegic",
+        "expart":"Neurosurgeon"
+    },
+    {
+        "id":5, 
+        "img":"https://image.freepik.com/free-photo/doctor-standing-with-folder-stethoscope_1291-16.jpg?1",
+        "name":" Dr Nell Bavuma",
+        "expart":"surgury"
+    },
+    {
+        "id":6, 
+        "img":"https://image.freepik.com/free-photo/portrait-doctor_144627-39390.jpg",
+        "name":" Dr Ema Eri ",
+        "expart":"Dental Surgeon"
+    }
+
+]
