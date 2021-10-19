@@ -19,7 +19,7 @@ const ServicesDetails = () => {
       })
   } ,[id])
 
-const serviceItem = service.filter(item=> item.id == id)
+const serviceItem = service.find(item=> item.id == id)
 
 
 
@@ -31,7 +31,7 @@ const serviceItem = service.filter(item=> item.id == id)
 console.log(serviceItem)
     return (
         <div>
-            <div className='service-details-area'>
+            <div className='service-details-area mb-5'>
             <div className='d-flex align-items-center'>
                      <div className='text-center'>
                      <h2 className='docTitle'>Meet Our Qualified Doctors</h2>
@@ -52,15 +52,17 @@ console.log(serviceItem)
             <Container>
 
                 <Row>
-                    <Col lg={6}>
-                    <div className='service-img'>
-                      
+                    <Col lg={6} md>
+                    <div className='service-img mb-4'>
+                      <img style={{width:"100%"}} src={serviceItem?.img} alt="" />
                         
                     </div>
                     </Col>
                     <Col lg={6}>
                     <div className='service'>
-                        
+                        <h2  className='text-danger mb-2 details-title'>{serviceItem?.name}</h2>
+
+                        <p>{serviceItem?.discription}</p>
                     </div>
                     </Col>
                 </Row>

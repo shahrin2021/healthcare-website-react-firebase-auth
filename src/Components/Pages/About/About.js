@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div id="about">
             <div className="about-area mb-5">
-                <h2 style={{color:'goldenrod'}}>About us</h2>
+                <h2 className='text-danger'>About us</h2>
             </div>
 
             

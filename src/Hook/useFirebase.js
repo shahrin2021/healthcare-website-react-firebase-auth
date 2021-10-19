@@ -60,6 +60,7 @@ const logOut = ()=>{
     return
   }
   setError('')
+
  login ? processLogin(email, password) : createNewUser(email, password)
 
   }
@@ -92,7 +93,8 @@ const logOut = ()=>{
     createUserWithEmailAndPassword(auth, email , password)
     .then(result=>{
       console.log(result.user)
-      setUserName()
+      setUserName(result.user)
+      window.location.reload()
     }).catch(error=>{
       console.log(error.massage)
       setError(error.massage)

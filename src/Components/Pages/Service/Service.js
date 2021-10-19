@@ -19,7 +19,7 @@ const Service = ({service}) => {
                     <Card.Body style={{background:'#fff'}}>
                     <Card.Title >{name}</Card.Title>
                     
-                <Link to={`/service/${id}`}>More Details</Link>
+                <Link style={{textDecoration:'none',fontSize:'20px'}} to={`/service/${id}`}>More Details <i class="uil uil-angle-double-right text-medium"></i></Link>
             </Card.Body>
             </Card> 
                
