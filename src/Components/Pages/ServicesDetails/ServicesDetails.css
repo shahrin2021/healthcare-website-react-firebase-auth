@@ -1,0 +1,10 @@
+.service-details-area{
+    background-image: url(../../../image/abour-banner.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

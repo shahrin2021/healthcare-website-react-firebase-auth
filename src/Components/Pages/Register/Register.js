@@ -1,38 +1,52 @@
-// import Button from '@restart/ui/esm/Button';
-// import React from 'react';
-// import { Container, Form } from 'react-bootstrap';
-// import useFirebase from '../../../Hook/useFirebase';
-// import './Register.css'
+import Button from '@restart/ui/esm/Button';
+import React from 'react';
+import { Container, Form } from 'react-bootstrap';
+import useAuth from '../../../Hook/useAuth';
+import useFirebase from '../../../Hook/useFirebase';
+import './Register.css'
 
-// const Register = () => {
-//     const {handleSubmit,handleEmail ,handlePassword , handleName}= useFirebase()
-//     return (
-//         <div>
-//            <div className="container">
-//                <div className="row">
-//                <div className="col-lg-8 offset-lg-2">
-//                 <form onSubmit={handleSubmit}>
-//                 <div class="mb-3">
-//                             <label for="exampleInputname" class="form-label">Name</label>
-//                             <input onBlur={handleName} type="text" class="form-control" id="exampleInputName"/>
-//                         </div>
-//                         <div class="mb-3">
-//                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-//                             <input onBlur={handleEmail} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-//                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-//                         </div>
-//                         <div class="mb-3">
-//                             <label for="exampleInputPassword1" class="form-label">Password</label>
-//                             <input onBlur={handlePassword} type="password" class="form-control" id="exampleInputPassword1"/>
-//                         </div>
-//                         <button type="submit" class="btn btn-primary">Submit</button>
-//                         </form>
+const Register = () => {
+    const {toggleLogin,setUserName, handleChangeName ,handleEmail ,handlePassword ,handelRegister,user,login, error,handleGoogleSignIn }= useAuth()
+    return (
+        <div id="register">
+            <div className="container">
+        <div className="form-area">
+  <div className="form-container">
+    <div><h2 className='text-white'>{login ? "Please Login" : "Please Register"}</h2></div>
+<form onSubmit={handelRegister} className=''>
+         {!login && <div className="mb-3">
+        <label htmlFor="example" className="form-label text-white">Name</label>
+        <input onBlur={handleChangeName} type="text" className=" inputBox w-100 form-control " id="exampleInput1" aria-describedby="nameHelp" required/>
+      </div> }
+    <div className="mb-3">
+        <label htmlFor="exampleInputEmail1" className="form-label text-white">Email address</label>
+        <input  onBlur={handleEmail}type="email" className=" inputBox w-100 form-control " id="exampleInputEmail1" aria-describedby="emailHelp" required/>
+    </div>
+    <div className="mb-3">
+      <label htmlFor="exampleInputPassword1" className="form-label text-white">Password</label>
+      <input onBlur={handlePassword} type="password" className=" inputBox w-100 form-control " id="exampleInputPassword1" required/>
+    </div>
+      <div className="mb-3 form-check">
+        <input onChange={toggleLogin}type="checkbox" className="form-check-input  " id="exampleCheck1"/>
+        <label className="form-check-label text-white" htmlFor="exampleCheck1">Already Registered</label>
+      </div>
+        <div><p className="text-danger">{error}</p></div>
+       <div className="text-center">
+       <button type="submit" className="btn btn-primary">{login ? "Login" : 'Register'}</button>
+       </div>
+</form>
 
-//                         </div>
-//                </div>
-//            </div>
-//         </div>
-//     );
-// };
+<div className='text-center mt-3'>
+<button className='btn btn-warning' onClick= {handleGoogleSignIn}>sign in with google</button>
+</div>
 
-// export default Register;
+          </div>
+         
+        </div>
+      
+      </div>
+        </div>
+    );
+};
+
+export default Register;

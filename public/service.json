@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "name":"Primary Care",
+        "img":"https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "discription":"we are always give best facalitis to our patients .Seniors and people with disabilities have robust access to medicines in Medicare Part D due in large part to a protection known as the “noninterference clause.” The noninterference clause prohibits the Secretary of Health and Human Services from interfering in the private negotiations – which already occur in Medicare Part D – between pharmaceutical manufacturers and Part D insurance plans or pharmacy benefit managers (PBMs). Unfortunately, some in Congress want to repeal this important element of Part D. Without this protection, government “negotiations” could directly and negatively impact access to lifesaving medicines for patients."
+    },
+    {
+        "id":"2",
+        "name":"Dental",
+        "img":"https://images.unsplash.com/photo-1584516150909-c43483ee7932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=824&q=80",
+        "discription":"w The noninterference clause prohibits the Secretary of Health and Human Services from interfering in the private negotiations – which already occur in Medicare Part D – between pharmaceutical manufacturers and Part D insurance plans or pharmacy benefit managers (PBMs). Unfortunately, some in Congress want to repeal this important element of Part D. Without this protection, government “negotiations” could directly and negatively impact access to lifesaving medicines for patients.Seniors and people with disabilities have robust access to medicines in Medicare Part D due in large part to a protection known as the “noninterference clause.”"
+    },
+    {
+        "id":"3",
+        "name":"Opthalmologis",
+        "img":"https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1452&q=80",
+        "discription":"we are always give best facalitis to our patients Instead of repealing important protections, we need to take a holistic approach to lowering what people pay out of pocket for medicines and ensuring Americans have access to the treatments their doctors prescribe. We have to lower what patients pay for their medicines AND make sure patients are getting the medicines they need. There’s a way to do both, but government “negotiation” isn’t it."
+    },
+    {
+        "id":"4",
+        "name":"Neurology",
+        "img":"https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1631&q=80",
+        "discription":"we are always give best facalitis to our patients .Seniors and people with disabilities have robust access to medicines in Medicare Part D due in large part to a protection known as the “noninterference clause.”Instead of repealing important protections, we need to take a holistic approach to lowering what people pay out of pocket for medicines and ensuring Americans have access to the treatments their doctors prescribe. We have to lower what patients pay for their medicines AND make sure patients are getting the medicines they need. There’s a way to do both, but government “negotiation” isn’t it. repeal this important element of Part D. Without this protection, government “negotiations” could directly and negatively impact access to lifesaving medicines for patients."
+    },
+    {
+        "id":"5",
+        "name":"Surgery",
+        "img":"https://images.unsplash.com/photo-1504813184591-01572f98c85f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+        "discription":"Instead of repealing important protections, we need to take a holistic approach to lowering what people pay out of pocket for medicines and ensuring Americans have access to the treatments their doctors prescribe. We have to lower what patients pay for their medicines AND make sure patients are getting the medicines they need. There’s a way to do both, but government “negotiation” isn’t it.manufacturers and Part D insurance plans or pharmacy benefit managers (PBMs). Unfortunately, some in Congress want to repeal this important element of Part D. Without this protection, government “negotiations” could directly and negatively impact access to lifesaving medicines for patients."
+    },
+    {
+        "id":"6",
+        "name":"Neurosurgerys",
+        "img":"https://images.unsplash.com/photo-1579154491915-611e891d3a5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80",
+        "discription":"Instead of repealing important protections, we need to take a holistic approach to lowering what people pay out of pocket for medicines and ensuring Americans have access to the treatments their doctors prescribe. We have to lower what patients pay for their medicines AND make sure patients are getting the medicines they need. There’s a way to do both, but government “negotiation” isn’t it.the Secretary of Health and Human Services from interfering in the private negotiations – which already occur in Medicare Part D – between pharmaceutical manufacturers and Part D insurance plans or pharmacy benefit managers (PBMs). Unfortunately, some in Congress want to repeal this important element of Part D. Without this protection, government “negotiations” could directly and negatively impact access to lifesaving medicines for patients."
+    }
+]

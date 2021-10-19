@@ -1,93 +1,115 @@
-// import { useState } from "react"
-// import firebaseInitializeConfig from "../Firebase/Firebase.init"
-// import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword ,updateProfile  } from "firebase/auth";
+import { useState,useEffect } from "react"
+import firebaseInitializeConfig from "../Firebase/Firebase.init"
+import { getAuth,signInWithPopup, createUserWithEmailAndPassword,signInWithEmailAndPassword ,onAuthStateChanged,signOut, GoogleAuthProvider,updateProfile  } from "firebase/auth";
 
-// firebaseInitializeConfig()
+firebaseInitializeConfig()
 
-// const useFirebase =()=>{
+const useFirebase =()=>{
 
-//     const [user ,setUser]= useState([]);
-//     const [email , setEmail]= useState('');
-//     const [password , setPassword]= useState('');
-//     const [error , setError] = useState('');
-//     const [name, setName]= useState('');
-//     const auth = getAuth()
-//     const [login , setLogin]=useState(false) ;
+    const [user , setUser] =useState({})
+  const [email, setEmail] = useState('')
+  const [password, setPassword] =useState('');
+  const [error , setError] =  useState('')
+  const [login , setLogin]=useState(false) ;
+  const [name, setName]= useState('');
+  const [isLoading , setIsLoading]=useState(true);
+   const googleProvider = new  GoogleAuthProvider();
+  const auth = getAuth()
+  console.log(name)
 
-//     console.log(email, password, name,'hhhh')
+  const handleGoogleSignIn=()=>{
+    signInWithPopup(auth , googleProvider)
+    .then(result=>{
+        setUser(result.user)
+    })
+    .finally(()=>setIsLoading(false))
+};
 
-//     const handleSubmit = (e)=>{
-//         e.preventDefault()
-//         if(password.length < 6){
-//             setError('password must be 6 charactor long')
-//             return
-//           } if(!/(?=.*[A-Z].*[A-Z])/.test(password) ){
-//             setError('password must contain tow uppercase')
-//             return
-//           }
-//           setError('')
-//         logInProcess(email, password) 
-         
-//         createNewUser(email, password)
-//         console.log(user)
-//         console.log(email, password, name,'hhhh')
-//     }
+useEffect(()=>{
+    const unsubscribed= onAuthStateChanged(auth , user=>{
+              if(user){
+                  setUser(user)
+              }else{
+                  setUser({})
+              }
+              setIsLoading(false);
+          })
+  
+          return ()=>unsubscribed;
+  
+      
+      },[]);
 
-//     const handleEmail=(e)=>{
-//         const user= e.target.value;
-//         setEmail(e.target.value)
-
-//    }
-
-
-//    const handlePassword =(e)=>{
-//     setPassword(e.target.value);
-
-//    }
-
-//    const handleName=(e)=>{
-//     setName(e.target.value)
-
-//    }
-
-//    const setUserName=()=>{
-//     updateProfile(auth.currentUser , {displayName:name})
-//     .then(result=>{
-
-//     })
-//    }
-
-//    const logInProcess=(email, password)=>{
-//     signInWithEmailAndPassword(auth, email, password)
-//     .then(result=>{
-//         setUser(result.user).catch(error=>{
-//             // setLogin(result.user)
-//             setError(error.massage)
-//         })
-//     })
-//    }
-
-//    const createNewUser=(email , password)=>{
-//     createUserWithEmailAndPassword(auth, email , password )
-//     .then(result=>{
-//         setUser(result.user)
-//         setUserName()
-//     }).catch(error=>{
-//         setError(error.massage)
-//     })
-//    }
+const logOut = ()=>{
+    signOut(auth)
+    .then(()=>{}).finally(()=>setIsLoading(false))
+}
 
 
+  const handelRegister=(e)=>{
+    e.preventDefault()
+  console.log('register added')
 
+  if(password.length < 6){
+    setError('password must be 6 charactor long')
+    return
+  } if(!/(?=.*[A-Z].*[A-Z])/.test(password) ){
+    setError('password must contain tow uppercase')
+    return
+  }
+  setError('')
+ login ? processLogin(email, password) : createNewUser(email, password)
 
+  }
 
-//    return {handleSubmit,handleEmail ,handlePassword ,handleName, user, error}
+  const handleEmail=(e)=>{
+      console.log(e.target.value);
+      setEmail(e.target.value);
+  }
 
+  const handlePassword=(e)=>{
+    console.log(e.target.value);
+    setPassword(e.target.value);
+  }
 
+  const handleChangeName=e=>{
+    console.log(e.target.value)
+    setName(e.target.value)
+  }
 
+  const setUserName = () =>{
+    updateProfile(auth.currentUser , {displayName:name} )
+    .then(result=>{
+      setUser(result)
+      console.log(result.user)
 
+    })
+  }
 
-// }
+  const createNewUser= (email , password)=>{
+    createUserWithEmailAndPassword(auth, email , password)
+    .then(result=>{
+      console.log(result.user)
+      setUserName()
+    }).catch(error=>{
+      console.log(error.massage)
+      setError(error.massage)
+    })
+  }
 
+  const toggleLogin= e =>{
+    setLogin(e.target.checked)
+  }
+  const processLogin = ()=>{
+    signInWithEmailAndPassword(auth, email, password)
+    .then(result=>{
+     setUser(result.user)
+     console.log(user)
+      setError('')
+    })
+  }
 
-// export default useFirebase;
+  return {toggleLogin,setUserName, handleChangeName ,handleEmail ,handlePassword ,handelRegister,user,login,error,handleGoogleSignIn,logOut,isLoading }
+
+}
+export default useFirebase;

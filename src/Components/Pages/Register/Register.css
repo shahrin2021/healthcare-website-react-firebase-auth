@@ -1,7 +1,22 @@
 .form-container{
     max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 60px;
+    background-color:dimgray;
+    border-radius: 20px;
 }
 
 .form-area {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputBox{
+    background-color: dimgray;
+}
+.inputBox:focus{
+    color: #fff;
+    background-color: dimgray !important;
 }

@@ -7,7 +7,7 @@ import './Doctores.css'
 const Doctores = () => {
     const [doctors , setDoctors]= useState([]);
     useEffect(()=>{
-        fetch('./doctor.json')
+        fetch('/doctor.json')
         .then(res=>res.json())
         .then(data=> setDoctors(data))
     },[])
@@ -18,9 +18,12 @@ const Doctores = () => {
                     <div className='d-flex align-items-center'>
                      <div className='text-center'>
                      <h2 className='docTitle'>Meet Our Qualified Doctors</h2>
-                    <NavLink className='docMenu' to ='/home'>Home</NavLink>
+                    
+                     <NavLink className='docMenu' to ='/home'>Home</NavLink>
                     <i className="uil uil-angle-right-b docIcon"></i>
                     <NavLink className='docMenu' to ='/doctor'>Doctor</NavLink>
+             
+                   
                      </div>
                     </div>
             </div>

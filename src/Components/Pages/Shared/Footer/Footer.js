@@ -56,12 +56,13 @@ const Footer = () => {
 
                     <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
                         <div>
+                            <h4 className='mb-3'>Send us your feedback</h4>
                             <form action="" >
                                 <label htmlFor=""> Name</label>
                                 <div className='footer-form'>
                                     <input type="text" />
                                 </div>
-                                <label htmlFor=""> Name</label>
+                                <label htmlFor=""> Phone</label>
                                 <div className='footer-form'>
                                     <input type="text" />
                                 </div>
