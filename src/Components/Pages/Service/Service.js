@@ -2,7 +2,7 @@ import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({service}) => {
@@ -19,7 +19,7 @@ const Service = ({service}) => {
                     <Card.Body style={{background:'#fff'}}>
                     <Card.Title >{name}</Card.Title>
                     
-                <NavLink to={`/service/${id}`}>More Details</NavLink>
+                <Link to={`/service/${id}`}>More Details</Link>
             </Card.Body>
             </Card> 
                

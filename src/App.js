@@ -2,12 +2,15 @@
 import { BrowserRouter,Switch ,Route} from 'react-router-dom';
 import './App.css';
 import Booking from './Components/Pages/Booking/Booking';
+import Contact from './Components/Pages/Contact/Contact';
 import Doctores from './Components/Pages/Doctores/Doctores';
 import Banner from './Components/Pages/Home/Banner/Banner';
 import Home from './Components/Pages/Home/Home/Home';
 import Scedule from './Components/Pages/Home/Scedule/Scedule';
 import Testimonial from './Components/Pages/Home/Testimonial/Testimonial';
 import Login from './Components/Pages/Login/Login';
+import Medicens from './Components/Pages/Madicens/Medicens';
+import PageNotFount from './Components/Pages/PageNotfound/PageNotFount';
 import Register from './Components/Pages/Register/Register';
 import Services from './Components/Pages/Services/Services';
 import ServicesDetails from './Components/Pages/ServicesDetails/ServicesDetails';
@@ -36,17 +39,26 @@ function App() {
         <PrivateRoute  path ='/booking'>
         <Booking></Booking>
         </PrivateRoute>
+        <PrivateRoute  path ='/medicen'>
+       <Medicens></Medicens>
+        </PrivateRoute>
         <Route  path ='/register'>
         <Register></Register>
         </Route>
         <Route  path ='/services'>
         <Services></Services>
         </Route>
-        <Route exact path ='/service/:serviceId'>
+        <Route exact path ='/service/:id'>
         <ServicesDetails></ServicesDetails>
         </Route>
         <Route  path ='/login'>
         <Login></Login>
+        </Route>
+        <Route  path ='/contact'>
+        <Contact></Contact>
+        </Route>
+        <Route exact path ='*'>
+        <PageNotFount></PageNotFount>
         </Route>
       </Switch>
        <Footer></Footer>

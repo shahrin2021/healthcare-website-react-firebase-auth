@@ -5,6 +5,7 @@ const Footer = () => {
     return (
         <div className='footer-area'>
             <div className="container">
+                <h1>SAVEWAY...</h1>
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className='mb-3'>
@@ -48,7 +49,7 @@ const Footer = () => {
                                 <li><NavLink to='/home' className='footer-item '>Home</NavLink></li>
                                 <li><NavLink  to='/about' className='footer-item '>About us</NavLink></li>
                                 <li><NavLink  to='/doctor' className='footer-item '>Doctor</NavLink></li>
-                                <li><NavLink  to='/service' className='footer-item '>service</NavLink></li>
+                                <li><NavLink  to='/services' className='footer-item '>service</NavLink></li>
                             </ul>
                             
                         </div>

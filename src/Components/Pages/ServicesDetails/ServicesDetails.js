@@ -5,17 +5,28 @@ import { NavLink } from 'react-router-dom';
 import './ServicesDetails.css'
 
 const ServicesDetails = () => {
-    const {serviceId}= useParams()
-    console.log(serviceId)
-    const [service, setService]=useState({})
+    const {id}= useParams()
 
-    useEffect(()=>{
-        fetch(`/service.json/${serviceId}`)
-        .then(res=>res.json())
-        .then(data=>console.log(data) )
-    },[])
+    const [service, setService]=useState([])
+    // const [singleService , setSingleService]=useState({})
+   
+  useEffect(()=>{
+      fetch(`https://raw.githubusercontent.com/shahrin2021/service-data/main/service.json`)
+      .then(res=>res.json())
+      .then(data=>{
+        setService(data)
+        console.log(data)
+      })
+  } ,[id])
+
+const serviceItem = service.filter(item=> item.id === id)
 
 
+
+  
+
+
+console.log(serviceItem)
     return (
         <div>
             <div className='service-details-area'>
@@ -32,17 +43,30 @@ const ServicesDetails = () => {
                     </div>
             </div>
 
+         
+
+            
+
             <Container>
 
                 <Row>
                     <Col lg={6}>
                     <div className='service-img'>
-                        <img src="" alt="" />
+                      
+                        
+                    </div>
+                    </Col>
+                    <Col lg={6}>
+                    <div className='service-img'>
+                    { service.name}
+                        
                     </div>
                     </Col>
                 </Row>
             </Container>
-            <h1>hi{serviceId}</h1>
+
+
+         
         </div>
     );
 };

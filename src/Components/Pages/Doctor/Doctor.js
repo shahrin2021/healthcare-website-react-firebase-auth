@@ -1,6 +1,7 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Doctor = ({doctor}) => {
     const {name, img, expart}=doctor
@@ -13,7 +14,9 @@ const Doctor = ({doctor}) => {
                     <Card.Text>
                     {expart}
                     </Card.Text>
+                    <Link to='/booking'>
                     <Button className='btn btn-success' variant="primary">Get Appoinment</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         </Col>

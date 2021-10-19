@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react"
 import firebaseInitializeConfig from "../Firebase/Firebase.init"
 import { getAuth,signInWithPopup, createUserWithEmailAndPassword,signInWithEmailAndPassword ,onAuthStateChanged,signOut, GoogleAuthProvider,updateProfile  } from "firebase/auth";
+import { useHistory } from "react-router";
 
 firebaseInitializeConfig()
 
@@ -13,6 +14,7 @@ const useFirebase =()=>{
   const [login , setLogin]=useState(false) ;
   const [name, setName]= useState('');
   const [isLoading , setIsLoading]=useState(true);
+  const history= useHistory()
    const googleProvider = new  GoogleAuthProvider();
   const auth = getAuth()
   console.log(name)
@@ -106,6 +108,7 @@ const logOut = ()=>{
      setUser(result.user)
      console.log(user)
       setError('')
+     
     })
   }
 
