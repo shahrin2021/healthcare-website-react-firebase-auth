@@ -47,3 +47,16 @@ font-weight: 500;
     
  
 }
+
+@media (max-width:688px){
+    .banner-text h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+    .footer-form{
+        margin-top: 30px;
+    }
+}

@@ -19,25 +19,28 @@ const Header = () => {
         <div>
     <Navbar collapseOnSelect expand="lg" style={{background:"green"}}>
     <Container>
-    <Navbar.Brand  >SaveWay</Navbar.Brand>
+    <Navbar.Brand style={{fontSize:'40px'}}  >SaveWay</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll" >
     <Nav className="mx-auto text-center d-flex justify-content-center align-items-center">
-      <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-      <Nav.Link as={Link} to='/blog' >Blog</Nav.Link>
-      <Nav.Link as={HashLink} to ="/doctor#doctor">Doctor</Nav.Link>
-      <Nav.Link as={HashLink} to ="/doctor#doctor">Doctor</Nav.Link>
-      <Nav.Link as={Link}  to="/medicen">Medicens</Nav.Link>
-      <Nav.Link as={HashLink} to='/register#register'>Register</Nav.Link>
-      <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
-      {user?.email && <div>
+      <Nav.Link style={{fontSize:'20px',color: '#090909'}} as={HashLink} to="/home#home">Home</Nav.Link>
+      <Nav.Link style={{fontSize:'20px',color: '#090909'}} as={HashLink} to="/about#about">About</Nav.Link>
+      <Nav.Link style={{fontSize:'20px',color: '#090909'}} as={HashLink} to ="/doctor#doctor">Doctor</Nav.Link>
+      <Nav.Link  style={{fontSize:'20px',color: '#090909'}} as={Link}  to="/medicen">Medicens</Nav.Link>
+      <Nav.Link style={{fontSize:'20px',color: '#090909'}} as={HashLink} to='/register#register'>Register</Nav.Link>
+      <Nav.Link style={{fontSize:'20px',color: '#090909'}}as={Link} to='/contact'>Contact</Nav.Link>
+      {user?.email && <div className="d-flex">
+        <div  style={{width:'45px',height:'45px',borderRadius:'50%',border:'2px solid #ddd'}}>
         <img style={{width:'40px',height:'40px',borderRadius:'50%',objectFit:'cover'}} src={user.photoURL} alt="" />
+        </div>
         <p className='m-0 ms-3'>{user.displayName}</p>
       </div> }
     
     </Nav>
-    { user?.email ? <Button onClick={logOut} className='btn btn-success'>Sign Out</Button> : <Nav.Link as={HashLink} to="/login#login">Login</Nav.Link>
+   <div className='text-center'>
+   { user?.email ? <Button onClick={logOut} className='btn btn-success'>Sign Out</Button> : <Nav.Link style={{fontSize:'20px',color: '#090909'}}  as={HashLink} to="/login#login">Login</Nav.Link>
       }
+   </div>
 
    
     </Navbar.Collapse>

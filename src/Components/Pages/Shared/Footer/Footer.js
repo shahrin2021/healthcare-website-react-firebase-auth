@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
-                        <div>
+                        <div className='footer-form'>
                             <h4 className='mb-3'>Send us your feedback</h4>
                             <form action="" >
                                 <label htmlFor=""> Name</label>

@@ -1,6 +1,7 @@
 
 import { BrowserRouter,Switch ,Route} from 'react-router-dom';
 import './App.css';
+import About from './Components/Pages/About/About';
 import Booking from './Components/Pages/Booking/Booking';
 import Contact from './Components/Pages/Contact/Contact';
 import Doctores from './Components/Pages/Doctores/Doctores';
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route  path ='/home'>
           <Home></Home>
+        </Route>
+        <Route  path ='/about'>
+          <About></About>
         </Route>
         <Route  path ='/doctor'>
         <Doctores></Doctores>

@@ -19,7 +19,9 @@ const ServicesDetails = () => {
       })
   } ,[id])
 
-const serviceItem = service.filter(item=> item.id === id)
+const serviceItem = service.filter(item=> item.id == id)
+
+
 
 
 
@@ -57,8 +59,7 @@ console.log(serviceItem)
                     </div>
                     </Col>
                     <Col lg={6}>
-                    <div className='service-img'>
-                    { service.name}
+                    <div className='service'>
                         
                     </div>
                     </Col>

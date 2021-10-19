@@ -6,7 +6,7 @@ const Medicen = ({madicen}) => {
     const {name, price , company}=madicen
     return (
        
-            <Col lg={4}>
+            <Col lg={4} md={6} sm={12}>
             
             <div className='medi-items'>
                 <h5>{name}</h5>
