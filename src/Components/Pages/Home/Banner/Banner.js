@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Banner.css'
 
 
@@ -13,7 +14,10 @@ const Banner = () => {
                <h1>Your Most Trusted Health Partner</h1>
                <p>We provide best leading medicle service to our patiant.</p>
            </div>
+           <Link to='/booking'>
+           
            <button className='bannerBtn btn btn-danger'>Make an Appoinment <i className="uil uil-arrow-right banner-icon"></i></button>
+           </Link>
            </Container>
         </div>
     );

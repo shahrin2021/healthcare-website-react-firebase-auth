@@ -8,10 +8,10 @@ const Medicen = ({madicen}) => {
        
             <Col lg={4} md={6} sm={12}>
             
-            <div className='medi-items'>
+            <div className='medi-items mb-4'>
                 <h5>{name}</h5>
                 <h6>{company}</h6>
-                <p>{price}</p>
+                <p>{price} TK</p>
                 <button className="btn btn-danger">Buy Now</button>
             </div>
             

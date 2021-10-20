@@ -38,7 +38,7 @@ console.log(serviceItem)
                     
                      <NavLink className='docMenu' to ='/home'>Home</NavLink>
                     <i className="uil uil-angle-right-b docIcon"></i>
-                    <NavLink className='docMenu' to ='/doctor'>ServiceDetails</NavLink>
+                    <NavLink className='docMenu' to ='/services'>Service</NavLink>
              
                    
                      </div>

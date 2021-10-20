@@ -3,11 +3,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+    
 }
 .booking-title{
 color:rgb(70, 57, 219);
@@ -18,10 +19,10 @@ color:rgb(70, 57, 219);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 }
 
 .booking-subTitle{
@@ -34,4 +35,11 @@ color:rgb(70, 57, 219);
 .lable{
     color: #fff;
     font-size: 20px;
+}
+
+@media(max-width:688px){
+    .bookingArea{
+      
+      
+    }
 }

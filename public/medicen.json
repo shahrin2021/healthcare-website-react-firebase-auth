@@ -9,7 +9,7 @@
 
     {
         "name":"Napa Extra",
-        "price":20,
+        "price":30,
         "company":"Acc"
 
 
@@ -17,28 +17,28 @@
 
     {
         "name":"Parkidopa",
-        "price":20,
+        "price":25,
         "company":"Acc"
 
 
     },
     {
         "name":"Tushistin",
-        "price":20,
+        "price":10,
         "company":"Acc"
 
 
     },
     {
         "name":"Deskpoten",
-        "price":20,
+        "price":50,
         "company":"Acc"
 
 
     },
     {
         "name":"Tofen",
-        "price":20,
+        "price":30,
         "company":"Acc"
 
 
@@ -52,14 +52,14 @@
     },
     {
         "name":"Kitofen",
-        "price":20,
+        "price":15,
         "company":"Acc"
 
 
     },
     {
         "name":"Monas",
-        "price":20,
+        "price":5,
         "company":"Acc"
 
 
@@ -73,28 +73,28 @@
     },
     {
         "name":"Serin",
-        "price":20,
+        "price":70,
         "company":"Acc"
 
 
     },
     {
         "name":"Histasin",
-        "price":20,
+        "price":35,
         "company":"Acc"
 
 
     },
     {
         "name":"osartil 50+",
-        "price":20,
+        "price":60,
         "company":"Acc"
 
 
     },
     {
         "name":"Tenobis plus",
-        "price":20,
+        "price":30,
         "company":"Acc"
 
 

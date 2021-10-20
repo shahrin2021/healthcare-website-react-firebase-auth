@@ -31,3 +31,9 @@
 .testimonial-area{
     margin-top: 60px;
 }
+
+@media(max-width:688px){
+    .testimonial-items{
+        margin-bottom: 30px;
+    }
+}

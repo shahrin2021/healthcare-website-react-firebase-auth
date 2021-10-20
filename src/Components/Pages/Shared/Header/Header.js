@@ -17,9 +17,9 @@ const Header = () => {
 }
     return (
         <div>
-    <Navbar collapseOnSelect expand="lg" style={{background:"green"}}>
+    <Navbar collapseOnSelect expand="lg" style={{background:"skyblue" ,opcity:".1"}}>
     <Container>
-    <Navbar.Brand style={{fontSize:'40px',color:'#fff'}}  >SaveWay<sub style={{fontSize:"14px",color:"orange"}}>.clinic</sub></Navbar.Brand>
+    <Navbar.Brand style={{fontSize:'40px',color:'#10feab'}}  >SaveWay<sub style={{fontSize:"14px",color:"orange"}}>.clinic</sub></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll" >
     <Nav className="mx-auto text-center d-flex justify-content-center align-items-center">
@@ -30,11 +30,11 @@ const Header = () => {
       <Nav.Link  style={{fontSize:'20px',color: '#090909'}} as={Link}  to="/medicen">Medicens</Nav.Link>
       <Nav.Link style={{fontSize:'20px',color: '#090909'}} as={HashLink} to='/register#register'>Register</Nav.Link>
       <Nav.Link style={{fontSize:'20px',color: '#090909'}}as={Link} to='/contact'>Contact</Nav.Link>
-      {user?.email && <div className="d-flex align-items-center">
+      {user?.email && <div className="d-flex align-items-center ms-1 ">
         <div  style={{width:'45px',height:'45px',borderRadius:'50%',border:'2px solid #ddd'}}>
         <img style={{width:'40px',height:'40px',borderRadius:'50%',objectFit:'cover'}} src={user.photoURL} alt="" />
         </div>
-        <p className='m-0 ms-3'>{user.displayName}</p>
+        <p className='m-0 ms-1'>{user.displayName}</p>
       </div> }
     
     </Nav>
